@@ -1,7 +1,6 @@
 class Injectable {
   constructor() {
-    this.constructor.$inject.forEach((name, i) =&gt; {
-      this[name] = arguments[i];
+    this.constructor.$inject.forEach((name, i) =&gt; {this[name] = arguments[i];
     });
   }
 }
