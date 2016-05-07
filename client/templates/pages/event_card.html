@@ -1,0 +1,27 @@
+<template name="eventCard">
+  <div class="card" id="{{_id}}">
+<div class="row">
+<div class="col-xs 12">
+  <!-- {{#HammerTouchArea gestureMap=templateGestures}} -->
+  <div class="image-box">
+  <figure>
+    <img class="img-responsive img-item" src="{{image}}" alt="">
+    <span class="text-content"><span>{{name}}</span></span>
+  </figure>
+  </div>
+  <!-- {{/HammerTouchArea}} -->
+  <div class="col-xs-2 col-xs-offset-4">
+    <a class="dislike">
+        <i class="fa fa-4x fa-thumbs-o-down"></i>
+    </a>
+   </div>
+   <div class="col-xs-2">
+   <a class="like">
+        <i class="fa fa-4x fa-thumbs-o-up"></i>
+    </a>
+   </div>
+</div>
+</div>
+</div>
+
+</template>

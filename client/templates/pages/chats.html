@@ -1,0 +1,17 @@
+<template name="chats">
+  <div class="container">
+  {{#each liked}}
+  <div class="row">
+    <div class="col-xs-3">
+      <figure>
+        <img class="img-chat img-rounded" src="{{image}}" alt="">
+      </figure>
+    </div>
+    <div class="col-xs-9">
+      {{name}}<br>
+      {{description}}
+    </div>
+  </div>
+  {{/each}}
+  </div>
+</template>
