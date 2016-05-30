@@ -1,0 +1,66 @@
+.splash-page {
+  background: url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.splash-page .logo h1, h3 {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.splash-page .logo h1 {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.splash-page .signup-opt {
+  color: #FFFFFF;
+  padding: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.splash-page .action-button {
+  font-weight: bolder;
+}
+
+.discover-page .current-product {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+
+  -webkit-transition:all cubic-bezier(0.420, 0.000, 1.000, 1.000) 0.1s;
+  transition:all cubic-bezier(0.420, 0.000, 1.000, 1.000) 0.1s;
+}
+
+
+.discover-page .current-product.favorited.ng-hide {
+  -webkit-transform: translateX(1000px) rotate(50deg);
+  -ms-transform: translateX(1000px) rotate(50deg);
+  transform: translateX(1000px) rotate(50deg);
+  opacity:0;
+}
+
+.discover-page .current-product.skipped.ng-hide {
+  -webkit-transform: translateX(-1000px) rotate(-50deg);
+  -ms-transform: translateX(-1000px) rotate(-50deg);
+  transform: translateX(-1000px) rotate(-50deg);
+  opacity:0;
+}
+
+.discover-page .current-product.ng-hide-add {
+  -webkit-transition:all cubic-bezier(0.420, 0.000, 1.000, 1.000) 0.3s;
+  transition:all cubic-bezier(0.420, 0.000, 1.000, 1.000) 0.3s;
+  display:block!important;
+}
+
+.discover-page .current-product.ng-hide-remove {
+  -webkit-transform: scale(0.7) translateX(0px) rotate(0deg);
+  -ms-transform: scale(0.7) translateX(0px) rotate(0deg);
+  transform: scale(0.7) translateX(0px) rotate(0deg);
+  opacity: 0;
+}

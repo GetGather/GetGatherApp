@@ -1,0 +1,13 @@
+<ion-view view-title="Favorites" class="favorites-page">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-avatar" ng-repeat="event in favorites">
+        <img ng-src="{{event.thumbnail}}">
+        <h2>{{event.name}}</h2>
+        <p>{{event.tagline}}</p>
+        <ion-option-button class="button-assertive" ng-click="removeEvent(event, $index)">
+          <i class="ion-minus-circled"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

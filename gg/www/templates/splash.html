@@ -1,0 +1,33 @@
+<ion-view view-title="GetGather" class="splash-page" hide-nav-bar="true">
+  <ion-content scroll="false">
+    <div class="padding logo">
+      <h1>Get Gather</h1>
+      <h3>Connecting People</h3>
+    </div>
+    <div class="login-form">
+      <div class="card">
+        <div class="list">
+          <label class="item item-input" ng-show="form.signUp">
+            <input type="text" ng-model="form.firstname" placeholder="Enter your First Name">
+          </label>
+          <label class="item item-input" ng-show="form.signUp">
+            <input type="text" ng-model="form.lastname" placeholder="Enter your Last Name">
+          </label>
+          <label class="item item-input">
+            <input type="text" ng-model="form.email" placeholder="Enter your Email">
+          </label>
+          <label class="item item-input">
+            <input type="password" ng-model="form.password" placeholder="Enter your Password">
+          </label>
+        </div>
+      </div>
+      <div class="padding-left padding-right">
+        <button class="button button-block action-button" ng-show="form.signUp" ng-class="{'button-positive': !form.signUp, 'button-balanced': form.signUp}" ng-click="submitSignUpForm(form.email, form.password, form.firstname, form.lastname)">Sign Up</button>
+        <button class="button button-block action-button" ng-show="!form.signUp" ng-class="{'button-positive': !form.signUp, 'button-balanced': form.signUp}" ui-sref="tab.discover">Log In</button>
+      </div>
+    </div>
+    <div class="padding signup-opt" ng-click="form.signUp = !form.signUp">
+      {{form.signUp? 'Have an account? Sign in!': 'Need an account? Sign up!'}}
+    </div>
+  </ion-content>
+</ion-view>

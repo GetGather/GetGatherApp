@@ -1,0 +1,15 @@
+{
+  "name": "ddp.js",
+  "homepage": "https://github.com/mondora/ddp.js",
+  "version": "2.1.0",
+  "_release": "2.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.1.0",
+    "commit": "76ccdddb18c2d4bb0f7fd14b06f09585ceee024b"
+  },
+  "_source": "https://github.com/mondora/ddp.js.git",
+  "_target": "~2.1.0",
+  "_originalSource": "ddp.js",
+  "_direct": true
+}
